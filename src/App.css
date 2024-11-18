@@ -1,38 +1,192 @@
-.App {
-  text-align: center;
+
+/* HEADER */
+.top-text {
+  display: flex;
+  align-items: center;
+  font-family: 'Rethink Sans';
+  font-weight: 400;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top-text p{
+  color: #000000;
+  text-align: left;
+  margin-left: 30px;
+  background-color: #fff;
+  height: 60px;
+  line-height: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top-text .smd {
+  color: #000;
+  font-weight: 600;
+  margin-left: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-text h6 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 400px;
+}
+
+.top-text .login {
+  text-decoration: none;
+  color: #000;
+  margin-left: 60px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 100px;
+  z-index: 1000;
+  position: relative; /* Keep navbar in place */
+}
+
+.side-menu img, .shop-nav img {
+  width: 35px;
+}
+
+.side-menu img {
+  margin-left: 18px;
+}
+
+.shop-nav img {
+  margin-bottom: 3px;
+}
+
+.shop-nav {
+  display: flex; 
+  margin-left: -295px;  
+}
+
+.shop-nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.shop-nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  font-family: 'Rethink Sans';
+  font-weight: 800;
+  font-size: 12px;
+  padding: 21px 18px;
+  border-bottom: 7px solid transparent; 
+  transition: background-color 0.3s, border-bottom 0.3s;
+}
+
+.shop-nav a:hover {
+  background-color: #c4bdbd;
+  border-bottom: 7px solid #000;
+}
+
+.shop-nav a.active {
+  background-color: #c4bdbd; 
+  border-bottom: 7px solid #000; 
+}
+
+.r-age {
+  border-left: 1px solid #ccc;
+}
+
+.b-genre {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.logo img {
+  width: 240px;
+  height: 80px;
+  margin-top: 10px;
+  margin-left: -300px;
+}
+
+.logo-girl img {
+  width: 300px;
+  height: 150px;
+  margin-top: 50px;
+  margin-left: -310px;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  padding-right: 90px;  
+  cursor: pointer;
+}
+
+.icons img {
+  width: 30px;
+}
+
+.icon2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 1000; 
+}
+
+.search-bar {
+  display: none; 
+  position: absolute; 
+  right: 20px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  transition: border-bottom 0.3s ease;
+}
+
+.search-bar.active {
+  display: block; /* Show when active */
+  border-bottom: 2px solid black; 
+}
+
+.search-bar input {
+  width: 150px;
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  transition: width 0.3s ease;
+  background: transparent;
+}
+
+.search-bar.active input {
+  width: 200px; /* Expand input when active */
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -1px;  
+  right: -22px;  
+  background-color: #000;
   color: white;
+  border-radius: 60%;
+  padding: 3px 6px;  
+  font-size: 12px;  
+  min-width: 24px;  
+  text-align: center;  
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+/* Hide the badge if cartCount is 0 */
+.badge:empty {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
