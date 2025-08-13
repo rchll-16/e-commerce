@@ -10,11 +10,6 @@ Built with **React**, **Node.js**, and **MongoDB** — providing a smooth, respo
 
 ---
 
-## 🚀 Live Demo
-> _Add your deployed link here if available_
-
----
-
 ## 🛠 Tech Stack
 
 ### **Frontend**
@@ -88,16 +83,6 @@ npm run dev
 cd ../frontend
 npm start
 \`\`\`
-
----
-
-## 📸 Screenshots
-
-> _Add images of your app here_  
-For example:
-![Homepage](https://via.placeholder.com/800x400?text=Homepage)
-![Book Details](https://via.placeholder.com/800x400?text=Book+Details)
-![Cart](https://via.placeholder.com/800x400?text=Cart)
 
 ---
 
